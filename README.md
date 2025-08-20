@@ -1,18 +1,5 @@
 # 🌀 n8n Workflows Collection  
 [![n8n](https://img.shields.io/badge/Automation-n8n-blue)](https://n8n.io/) 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
-## 📂 Repository Structure
-n8n-workflows/
-├── workflows/
-│   ├── slack-automation/
-│   │   ├── slack-reminder.json
-│   │   └── README.md
-│   ├── github-integration/
-│   │   ├── auto-issues.json
-│   │   └── README.md
-└── docs/
-    └── screenshots/
 
 ## 🚀 How to Use These Workflows
 1. Clone or download this repository.  
@@ -32,6 +19,5 @@ n8n-workflows/
 ## 🖼️ Screenshots
 ![Slack Reminder Workflow](./docs/screenshots/slack-reminder.png)
 
-## 📜 License
-Released under the [MIT License](LICENSE).  
+
 Feel free to use and adapt these workflows for your own projects.  
