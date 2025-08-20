@@ -16,4 +16,4 @@
 | GitHub Auto-Issues | Creates GitHub issues from form submissions | [View](./workflows/github-integration) |
 | Data Cleaning Pipeline | Cleans raw CSV data and stores in database | [View](./workflows/data-cleaning) |
 
-Feel free to use and adapt these workflows for your own projects.  
+### Feel free to use and adapt these workflows for your own projects.  
