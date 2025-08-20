@@ -12,7 +12,7 @@
 ## 📋 Available Workflows
 | Workflow | Description | Link |
 |----------|-------------|------|
-| Slack Daily Reminder | Sends automated reminders in Slack channels | [View](https://github.com/Muskansaraf/Muskansaraf-n8n-workflows--/tree/main/workflows/daily-slack-reminder) |
+| Slack Daily Reminder | Sends automated reminders in Slack channels | [View](https://github.com/Muskansaraf/Muskansaraf-n8n-workflows--/tree/main/workflows/Daily-Slack-Reminder) |
 | GitHub Auto-Issues | Creates GitHub issues from form submissions | [View](./workflows/github-integration) |
 | Data Cleaning Pipeline | Cleans raw CSV data and stores in database | [View](./workflows/data-cleaning) |
 
