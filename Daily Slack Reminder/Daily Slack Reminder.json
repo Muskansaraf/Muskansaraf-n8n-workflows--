@@ -1,0 +1,59 @@
+{
+  "name": "Daily Slack Reminder",
+  "nodes": [
+    {
+      "id": "6a4c2b1a-55b7-4e9f-9f1c-aaa000001111",
+      "name": "Schedule (Daily 9:00 AM)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [ -320, 0 ],
+      "parameters": {
+        "triggerTimes": [
+          {
+            "mode": "custom",
+            "cronExpression": "0 9 * * *"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5f7b21ce-1368-4c39-809e-b6c8b88be88a",
+      "name": "Post to Slack",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2,
+      "position": [ 120, 0 ],
+      "parameters": {
+        "select": "channel",
+        "channelId": "C0123456789",
+        "text": "⏰ Daily reminder: please post your standup update!\n• What did you do yesterday?\n• What are you doing today?\n• Any blockers?",
+        "otherOptions": {
+          "includeLinkToWorkflow": false
+        }
+      },
+      "credentials": {
+        "slackApi": {
+          "id": "",
+          "name": ""
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Schedule (Daily 9:00 AM)": {
+      "main": [
+        [
+          {
+            "node": "Post to Slack",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  ],
+  "active": false,
+  "settings": {
+    "timezone": "America/New_York"
+  },
+  "pinData": {}
+}
