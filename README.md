@@ -16,4 +16,14 @@
 | GitHub Auto-Issues | Creates GitHub issues from form submissions | [View](./workflows/github-integration) |
 | Data Cleaning Pipeline | Cleans raw CSV data and stores in database | [View](./workflows/data-cleaning) |
 
+## 🔎 Tags  
+
+![n8n](https://img.shields.io/badge/-n8n-blue)  
+![automation](https://img.shields.io/badge/-automation-green)  
+![nocode](https://img.shields.io/badge/-nocode-orange)  
+![marketingops](https://img.shields.io/badge/-marketingops-purple)  
+![ecommerce](https://img.shields.io/badge/-ecommerce-red)  
+![workflows](https://img.shields.io/badge/-workflows-yellow)  
+![open-source](https://img.shields.io/badge/-open--source-lightgrey)  
+
 ### Feel free to use and adapt these workflows for your own projects.  
