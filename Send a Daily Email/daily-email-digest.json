@@ -1,0 +1,57 @@
+{
+  "name": "Daily Email Digest",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Schedule (Daily 8:00 AM)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [ -320, 0 ],
+      "parameters": {
+        "triggerTimes": [
+          {
+            "mode": "custom",
+            "cronExpression": "0 8 * * *"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 1,
+      "position": [ 120, 0 ],
+      "parameters": {
+        "fromEmail": "you@example.com",
+        "toEmail": "recipient@example.com",
+        "subject": "📩 Daily Digest",
+        "text": "Good morning! Here is your daily digest summary."
+      },
+      "credentials": {
+        "smtp": {
+          "id": "",
+          "name": ""
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Schedule (Daily 8:00 AM)": {
+      "main": [
+        [
+          {
+            "node": "Send Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "timezone": "America/New_York"
+  },
+  "pinData": {}
+}
